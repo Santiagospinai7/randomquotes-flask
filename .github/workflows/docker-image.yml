@@ -21,8 +21,8 @@ jobs:
       run: |
         docker login -u $DOCKER_USER -p $DOCKER_PASS
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag nram94/flask-randomquotes:latest
+      run: docker build . --file Dockerfile --tag sospinai7/express-randomquotes:latest
       
     - name: Docker Push
-      run: docker push nram94/flask-randomquotes
+      run: docker push sospinai7/express-randomquotes
 
